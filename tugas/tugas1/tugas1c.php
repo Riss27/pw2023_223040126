@@ -6,21 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tugas1c</title>
     <style>
-        .box {
-            width: 40px;
-            background-color: navajowhite;
-            text-align: center;
-            border: 1px solid salmon;
-            line-height: 40px;
-            aspect-ratio: 1;
-        }
-
-        .box_wrapper {
-            display: flex;
-        }
+       .box {
+        width: 40px;
+        aspect-ratio: 1;
+        background-color: navajowhite;
+        text-align: center;
+        line-height: 40px;
+        border: 1px solid salmon;
+       }
+       .box-wrapper {
+        display: flex;
+       }
     </style>
 </head>
-
 <body>
     <div class="box">1</div>
     <div class="box-wrapper">

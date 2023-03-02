@@ -9,10 +9,8 @@
 <body>
 
     <?php
-
         $nama_barang = 'Topi';
         $nama_bentuk = 'Bundar';
-        
     ?>
 
     <h2>

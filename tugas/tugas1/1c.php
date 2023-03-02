@@ -6,6 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tugas1c</title>
     <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
        .box {
         width: 40px;
         aspect-ratio: 1;

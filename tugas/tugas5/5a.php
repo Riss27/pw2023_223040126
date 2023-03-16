@@ -1,14 +1,5 @@
 <?php 
-// $mahasiswa = [
-// ["Muhammad Faris Fathur Rohman", "223040126", 
-// "faris.223040126@mail.unpas.ac.id", "Teknik Infomatika"],
-// ["Fawwas Nawwaf Sabil", "223040113", 
-// "fawwas.223040126@mail.unpas.ac.id", "Teknik Infomatika"],
-// ["Reza Ageng Trihandoko", "223040114", 
-// "reza.223040126@mail.unpas.ac.id", "Teknik Infomatika"],
-// ];
-
-    $mahasiswa = [
+$mahasiswa = [
         [
         "nama" => "Muhammad Faris Fathur Rohman", 
         "nrp" => "223040126", 

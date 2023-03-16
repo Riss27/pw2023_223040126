@@ -33,14 +33,6 @@ $film = [
         "poster" => "cars.png"
         ],
         [
-        "judul" => "Assasin's Creed", 
-        "tahun" => "2016", 
-        "genre" => ["Action,  ", "Adventure,  ", "Sci-Fi"],
-        "sutradara" => ["Justin Kurzel"], 
-        "pemeran utama" => ["Michael Fassbender, ", "Marion Cotillard, ", "Jeremy Irons"],
-        "poster" => "asasin.png"
-        ],
-        [
         "judul" => "Shazam!", 
         "tahun" => "2019", 
         "genre" => ["Action, " , "Adventure, ", "Comedy"],

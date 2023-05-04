@@ -57,3 +57,7 @@ print_r($hari);
 // 
 
 ?>
+
+<?php 
+    $mahasiswa = ["ikan"]
+?>

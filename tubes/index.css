@@ -1,0 +1,53 @@
+/* Navbar */
+.navbar-brand {
+  font-family: Viga;
+  font-size: 32px;
+}
+.nav-link {
+  text-transform: uppercase;
+  margin-right: 40px;
+}
+
+.tombol {
+  text-transform: uppercase;
+  border-radius: 30px;
+}
+footer {
+  position: absolute;
+  bottom: 1;
+  width: 100%;
+  height: auto;
+  color: #6c757d;
+}
+
+footer h5 {
+  color: white;
+}
+
+footer ul li a {
+  color: #6c757d;
+}
+
+footer ul li a:hover {
+  color: white;
+}
+
+@media (max-width: 767.98px) {
+footer {
+  position: relative;
+}
+  
+footer .container {
+  padding-left: 0;
+  padding-right: 0;
+  }
+  
+footer .row {
+  flex-wrap: wrap;
+  }
+  
+footer .col-md-3 {
+  width: 50%;
+  margin-bottom: 20px;
+}
+}

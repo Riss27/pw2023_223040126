@@ -4,46 +4,58 @@
 
 <!-- Awal Body -->
 
-
-<section class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center mb-5" style="background-image: url(img/index.jpg);">
-  <div class="content text-center text-light">
-    <h1 class="text-center">Explore the Beauty of Indonesia</h1>
-    <p class="text-center">Discover amazing destinations and create unforgettable memories</p>
-  </div>
-</section>
-
-    
-    <!-- Awal Carousel -->
-    
-    <!-- Akhir Carousel -->
-
-    <!-- Isi -->
-
-    <div class="container mt-5 mb-4" data-aos="fade-right">
-      <h1 class="fs-1">Best Place To Visit</h1>
-    </div>
-
-    <div class="container mb-5 pb-3" data-aos="zoom-in-right">
-      <div class="row">
-        <?php foreach($destinations as $d) : ?>
-        <div class="col-md-4">
-          <div class="d-flex flex-column h-100">
-            <div class="ratio ratio-4x3">
-              <img src="img/<?= $d['gambar']; ?>" data-aos="fade-up" class="img-fluid rounded" alt="Pandawa Bali" />
-            </div>
-            <h3 class="text-center mt-3" data-aos="fade-up"><?= $d['nama']; ?></h3>
-            <p data-aos="zoom-in"><?= $d['deskripsi']; ?></p>
-            <div class="mt-auto text-center">
-              <a href="detail.php" data-aos="fade-right" class="btn btn-primary mb-5">Lihat Detail</a>
-              <a href="admin.php" data-aos="fade-left" class="btn btn-primary mb-5">Book Now</a>
-            </div>
-          </div>
-        </div>
-        <?php endforeach; ?>
+<div class="container">
+  <div class="row">
+    <div class="col-md-6 my-5 d-flex align-items-center">
+      <div class="text-center justify-content-center w-100">
+        <h1>Welcome to Indonesia Tourism</h1>
+        <p>Discover the Beauty of Indonesia</p>
       </div>
     </div>
+    <div class="col-md-6 my-5">
+      <img src="img/banner-img.jpg" class="w-100 rounded" alt="#">
+    </div>
+  </div>
+</div>
+
+
+
+<!-- Isi -->
+<div class="container col-md-8 mt-5 mb-4">
+  <h1 class="text-center fs-1">Best Place To Visit</h1>
+</div>
+
+  <div class="container col-md-8 mb-5 pb-3">
+    <form action="" method="get">
+      <div class="input-group my-3">
+        <input type="search" class="form-control" placeholder="Search Destination(s) by Provinsi..." name="keyword" id="keyword" autofocus autocomplete="off" >
+        <button class="btn btn-outline-primary btn-warning text-light button-search" type="submit" name="button-search" id="button-search"><i class="bi bi-search"></i></button>
+    </form>
+  </div>
+
+  <div class="row row-cols-1 row-cols-md-3 g-4" id="search-container">
+  <?php foreach ($destinations as $d) : ?>
+    <div class="col">
+        <div class="card h-100">
+            <img src="img/<?= $d['gambar']; ?>" style="object-fit: cover; aspect-ratio: 4/3" class="card-img-top" alt="#">
+            <div class="card-body">
+                <h5 class="card-title"><?= $d['nama']; ?></h5>
+                <p class="card-text"><?= $d['deskripsi']; ?></p>
+            </div>
+            <div class="card-footer text-center">
+                <div class="d-grid gap-2">
+                    <a href="detail.php?id=<?= $d['id']; ?>" class="btn btn-primary">Lihat Detail</a>
+                    <a href="#" class="btn btn-warning">Book Now (belum work)</a>
+                </div>
+            </div>
+        </div>
+    </div>
+<?php endforeach; ?>
+  </div>
+</div>
     <!-- Akhir Isi -->
 
     <!-- Akhir Body -->
 
+    
 <?php require('views/partials/footer.php'); ?>

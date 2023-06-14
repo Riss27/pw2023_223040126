@@ -1,46 +1,36 @@
 <?php require('partials/header.php'); ?>
-<?php require('partials/nav.php'); ?>
 
-<section class="banner-image w-100 vh-100 d-flex justify-content-center align-items-center mb-5" style="background-image: url(img/banner-img.jpg);">
-
-<div class="container mx-auto my-auto">
-  <div class="row justify-content-center">
+<div class="container position-absolute top-50 start-50 translate-middle">
+  <div class="row my-auto justify-content-center">
     <div class="col-md-6">
-      
-      <!-- Form Registrasi -->
-      <div class="card">
-        <div class="card-header">
-          <h3 class="text-center text-primary">Registrasi</h3>
-        </div>
-        <div class="card-body">
-          <form action="process_registration.php" method="POST">
+      <?php if (isset($register['error'])) : ?>
+      <p style="color: red; font-style: italic"><?= $register['pesan']; ?></p>
+      <?php endif ?>
+      <form action="" method="POST">
+        <div class="card" style="background-color: #121212;">
+          <div class="card-header">
+            <h1 class="text-center text-danger">Register</h1>
+          </div>
+          <div class="card-body">
             <div class="mb-3">
-              <label for="nama" class="form-label">Nama Lengkap</label>
-              <input type="text" class="form-control" id="nama" name="nama" required>
+              <label for="username" class="form-label">Username:</label>
+              <input type="text" class="form-control" id="username" name="username" autofocus autocomplete="off" required>
             </div>
             <div class="mb-3">
-              <label for="email" class="form-label">Email</label>
-              <input type="email" class="form-control" id="email" name="email" required>
-            </div>
-            <div class="mb-3">
-              <label for="password" class="form-label">Password</label>
+              <label for="password" class="form-label">Password:</label>
               <input type="password" class="form-control" id="password" name="password" required>
             </div>
             <div class="mb-3">
-              <label for="password_confirm" class="form-label">Konfirmasi Password</label>
-              <input type="password" class="form-control" id="password_confirm" name="password_confirm" required>
+              <label for="password2" class="form-label">Konfirmasi Password:</label>
+              <input type="password" class="form-control" id="password2" name="password2" required>
             </div>
             <div class="d-grid">
-              <a href="index.php" type="submit" class="btn btn-primary">Submit</a>
+              <button type="submit" name="register" class="btn btn-danger">Register!</button>
             </div>
-
-          </form>
+          </div>
         </div>
-      </div>
+      </form>
     </div>
   </div>
 </div>
 
-</section>
-
-<?php require('partials/footer.php'); ?>

@@ -2,58 +2,50 @@
 
 <?php require('views/partials/nav.php'); ?>
 
-<div class="container">
-  <div class="row justify-content-center mt-5">
-    <div class="col-md-6">
+<div class="container" style="height: 85vh;">
+  <div class="row h-100 justify-content-center align-items-center">
+    <div class="col-md-8">
       <div class="text-center mb-4">
-        <h1 class="display-4">Welcome to</h1>
-        <h1 class="display-3 fw-bold">Admin Page</h1>
+        <h1 class="display-4 fw-bold">Welcome</h1>
       </div>
-    </div>
-  </div>
-
-  <div class="row justify-content-center mt-5">
-    <div class="col-sm-6 col-md-4 col-lg-3">
-      <div class="card bg-dark text-white border-light shadow">
-        <div class="card-header bg-transparent">
-          <i class="bi bi-pencil-fill"></i>
+      <div class="row justify-content-center mt-5">
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-dark text-white border-light shadow">
+            <div class="card-body d-flex justify-content-center align-items-center">
+              <a href="edit.php" class="btn btn-link text-light btn-lg">
+                <i class="bi bi-pencil-fill" style="font-size: 4rem;"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="card-body">
-          <h5 class="card-title">Edit Data</h5>
-          <a href="edit.php" class="btn btn-primary">Click Here</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 col-lg-3">
-      <div class="card bg-dark text-white border-light shadow">
-        <div class="card-header bg-transparent">
-          <i class="bi bi-calendar-check-fill"></i>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Booking</h5>
-          <a href="#" class="btn btn-primary">Click Here</a>
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-dark text-white border-light shadow">
+            <div class="card-body d-flex justify-content-center align-items-center">
+              <a href="#" class="btn btn-link text-light btn-lg">
+                <i class="bi bi-calendar-check-fill" style="font-size: 4rem;"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="col-sm-6 col-md-4 col-lg-3">
-      <div class="card bg-dark text-white border-light shadow">
-        <div class="card-header bg-transparent">
-          <i class="bi bi-gear-fill"></i>
+      <div class="row justify-content-center mt-3">
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-dark text-white border-light shadow">
+            <div class="card-body d-flex justify-content-center align-items-center">
+              <a href="#" class="btn btn-link text-light btn-lg">
+                <i class="bi bi-gear-fill" style="font-size: 4rem;"></i>
+              </a>
+            </div>
+          </div>
         </div>
-        <div class="card-body">
-          <h5 class="card-title">Setting</h5>
-          <a href="#" class="btn btn-primary">Click Here</a>
-        </div>
-      </div>
-    </div>
-    <div class="col-sm-6 col-md-4 col-lg-3">
-      <div class="card bg-dark text-white border-light shadow">
-        <div class="card-header bg-transparent">
-          <i class="bi bi-arrow-left"></i>
-        </div>
-        <div class="card-body">
-          <h5 class="card-title">Go Back</h5>
-          <a href="index.php" class="btn btn-primary">Click Here</a>
+        <div class="col-md-6 col-lg-4">
+          <div class="card bg-dark text-white border-light shadow">
+            <div class="card-body d-flex justify-content-center align-items-center">
+              <a href="index.php" class="btn btn-link text-light btn-lg">
+                <i class="bi bi-arrow-left" style="font-size: 4rem;"></i>
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>

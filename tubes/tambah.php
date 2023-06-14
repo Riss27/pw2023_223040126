@@ -1,4 +1,10 @@
 <?php 
+session_start();
+
+if (!isset($_SESSION['login'])) {
+    header("Location: login.php");
+    exit;
+}
 require('functions.php');
 
 $tittle = 'Form Tambah Data';
@@ -13,7 +19,7 @@ if(isset($_POST['tambah'])) {
         </script>";
     } else {
         echo "<script>
-        alert('Data Gagal Ditambahkan!');
+        alert('data gagal ditambahkan!');
         document.location.href  = 'tambah.php';
         </script>";
     }
